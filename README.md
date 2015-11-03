@@ -1,5 +1,5 @@
 # OpenCL
-================================================== WEEK 1 ==================================================
+========================= WEEK 1 =========================
 Add 3 example code written by using internet tutorials.
 
 Program nr.1
@@ -16,4 +16,4 @@ The plan for next week:
 - Write something by yourself without using tutorials
 - Finish exercise number 1 (  Add 1024x1024 matrix  )
 
-================================================== WEEK 2 ==================================================
+========================= WEEK 2 =========================
