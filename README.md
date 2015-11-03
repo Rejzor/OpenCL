@@ -4,12 +4,15 @@
 Add 3 example code written by using internet tutorials.
 
 Program nr.1
+
 Checking that environment is good configurated, if yes program will be compiled without any errors.
 
 Program nr.2
+
 Display devices which supporting OpenCL
 
 Program nr.3
+
 Adds two arrays by using OpenCl
 
 The plan for next week:
