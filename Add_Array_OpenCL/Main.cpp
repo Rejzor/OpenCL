@@ -4,10 +4,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<cstdio>
+#include <time.h>
 // OpenCL includes
 #include <CL/cl.h>
 
-#define DATA_SIZE 10
+#define DATA_SIZE 16384
 
 using namespace std;
 
@@ -32,7 +33,9 @@ int main(void)
 	cl_uint num_of_devices = 0;
 	cl_mem inputA, inputB, output;
 	size_t global;
-
+	clock_t start, koniec;
+	
+	start = clock(); // bie¿¹cy czas systemowy w ms
 	float inputDataA[DATA_SIZE] = { 0 };
 	float inputDataB[DATA_SIZE] = { 0 };
 	float  results[DATA_SIZE] = { 0 };
@@ -120,6 +123,11 @@ int main(void)
 		printf("[%d]: %f \n", i, results[i]);
 	}
 
+	
+	// dzia³ania, których czas zamierzamy zmierzyæ
+		koniec = clock(); // bie¿¹cy czas systemowy w ms
+	long delta = (long)(koniec - start);//czas dzia³añ w ms
+	printf("Czas wykonania programu: %lu ms", delta);
 	// cleanup - release OpenCL resources
 	clReleaseMemObject(inputA);
 	clReleaseMemObject(inputB);
