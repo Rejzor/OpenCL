@@ -15,6 +15,10 @@ Program nr.3
 
 Adds two arrays by using OpenCl
 
+Program nr.4
+
+Normal adds two arrays, comparison nomral and opencl adds
+
 The plan for next week:
 - Learn much more than today and take a more time than one day!
 - Write something by yourself without using tutorials
